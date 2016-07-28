@@ -44,7 +44,7 @@
 
          body {
              margin: 0 auto;
-             max-width: 50em;
+             max-width: auto;
              font-family: "Helvetica", "Arial", sans-serif;
              line-height: 1.5;
              padding: 4em 1em;
@@ -60,6 +60,7 @@
              background-color: #263d36;
              background-image: url("img/ross.jpg");
              background-position: center top;
+             max-width: none;
              background-repeat: no-repeat;
              background-size: cover;
              line-height: 1.2;
@@ -67,13 +68,17 @@
              text-align: center;
          }
 
+         header img {
+             max-width: 100%;
+             height: auto;
+         }
+
         </style>
 
     </head>
 
     <body onload="CoolClock.findAndCreateClocks()">
-        <header>
-        </header>
+        <header id="header"> </header>
 
         <div>
             <ul>
